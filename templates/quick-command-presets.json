@@ -1,0 +1,17 @@
+{
+  "editor": "mvim",
+  "presets": {
+    "dockerrails": {
+      "rw": "docker-compose run web",
+      "ub": "docker-compose up --build",
+      "dbc": "docker-compose run web rake db:create",
+      "u": "docker-compose up",
+      "d": "docker-compose down",
+      "s": "rm tmp/pids/server.pid; docker-compose up"
+    },
+    "git": {
+      "ga": "git add -A",
+      "gc": "git commit -m"
+    }
+  }
+} 

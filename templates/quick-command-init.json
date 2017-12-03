@@ -1,0 +1,6 @@
+{
+  "editor": "mvim",
+  "command": {
+    "test": "echo 'qc has been installed properly and is ready to use.'"
+  }
+}
