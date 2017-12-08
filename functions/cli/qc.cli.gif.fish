@@ -4,17 +4,18 @@ function qc.cli.gif
   set delay 5
 
   # update based on command line arguments
+  # in the form ... -argument value
   while set -q argv[1]
     switch $argv[1]
-      case '-r=*'
-        set r (string match -r '[^=]*$' -- $argv[1]) 
-      case '-delay=*'
-        set delay (string match -r '[^=]*$' -- $argv[1]) 
+      case '-r'
+        set r $argv[2] 
+      case '-delay'
+        set delay $argv[2] 
       case '*'
         break
     end
 
-    set -e argv[1]
+    set -e argv[1..2]
   end
 
   if set -q argv[1] 
