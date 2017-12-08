@@ -73,6 +73,12 @@ You can turn movies into gifs by using the command
 
     qc cli gif PATH_TO_MOVIE PATH_TO_GIF
 
+or you can do
+
+    qc cli gif PATH_TO_MOVIE
+
+which will assume the gif path is the same as the movie.
+
 ### Presets
 
 When you install qc, a file called `quick-command-presets.json` will be install to your `~/.config/fish/functions` directory. Here, you can define presets you may wish to bring into a new initialization of qc. For example, if your `quick-command-presets.json` looks like this
