@@ -69,6 +69,10 @@ This command will default to the mvim text editor. You can change it by updating
 }
 ```
 
+You can turn movies into gifs by using the command
+
+    qc cli gif PATH_TO_MOVIE PATH_TO_GIF
+
 ### Presets
 
 When you install qc, a file called `quick-command-presets.json` will be install to your `~/.config/fish/functions` directory. Here, you can define presets you may wish to bring into a new initialization of qc. For example, if your `quick-command-presets.json` looks like this
