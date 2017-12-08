@@ -1,5 +1,7 @@
 # Quick Command (qc)
 
+**Note that this tool is a work in progress.**
+
 qc is a tool to define project-specific aliases of terminal commands.
 
 Currently, qc is only supported using the fish shell, but will be made more general in the future.
