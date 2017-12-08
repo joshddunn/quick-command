@@ -6,10 +6,6 @@ Currently, qc is only supported using the fish shell, but will be made more gene
 
 ## Install
 
-We use [jq](https://stedolan.github.io/jq/) and [fswatch](https://github.com/emcrisostomo/fswatch) in this project.
-
-    brew install jq fswatch
-
 Clone this repository.
 
     git clone https://github.com/joshddunn/quick-command ~/.local/share/qc
