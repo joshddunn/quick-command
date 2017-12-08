@@ -1,6 +1,7 @@
 {
   "editor": "mvim",
   "command": {
-    "test": "echo 'qc has been installed properly and is ready to use.'"
+    "watch": "qc cli watch",
+    "gif": "qc cli gif"
   }
 }
