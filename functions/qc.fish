@@ -12,10 +12,6 @@ function qc
       set cmd "qc.cli.$action"
     case "-h" "--help"
       set cmd "qc.cli.help"
-    case "watch"
-      set cmd "qc.cli.watch"
-    case "gif"
-      set cmd "qc.cli.gif"
     case "*"
       set cmd "qc.cli.command $command"
   end

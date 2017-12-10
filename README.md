@@ -40,6 +40,9 @@ You can setup a file watcher by having
 
 ```json
 {
+  "command: {
+    "install": "qc cli watch install"
+  },
   "watch": {
     "install": {
       "file": "install.sh",
@@ -49,7 +52,7 @@ You can setup a file watcher by having
 }
 ```
 
-in your `quick-command.json` file. The watcher is run by the command `qc watch a`.
+in your `quick-command.json` file. The watcher is run by the command `qc cli watch install` or `qc install`.
 
 We can also remove the quick commands file by typing
 
