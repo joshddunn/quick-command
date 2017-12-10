@@ -8,7 +8,7 @@ function qc.cli.command
         case 1
           eval $value
         case '*'
-          eval $value $argv[2..-1]
+          eval $value (string escape -- $argv[2..-1])
       end
     end
   else
