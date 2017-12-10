@@ -6,8 +6,11 @@ function qc.cli.init
     cp $QC_PATH/templates/quick-command-init.json quick-command.json
 
     for arg in $argv
-      set -l presets (jq -r ".presets.$arg" $QC_PATH/templates/quick-command-presets.json) 
+      set -l presets (jq -r ".presets.$arg.command" $QC_PATH/templates/quick-command-presets.json) 
       jq ".command += $presets" quick-command.json > qc.tmp.json; mv qc.tmp.json quick-command.json
+
+      set -l presets (jq -r ".presets.$arg.watch" $QC_PATH/templates/quick-command-presets.json) 
+      jq ".watch += $presets" quick-command.json > qc.tmp.json; mv qc.tmp.json quick-command.json
     end
 
     echo "qc has been initialized" 

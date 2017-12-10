@@ -2,16 +2,26 @@
   "editor": "mvim",
   "presets": {
     "dockerrails": {
-      "rw": "docker-compose run web",
-      "ub": "docker-compose up --build",
-      "dbc": "docker-compose run web rake db:create",
-      "u": "docker-compose up",
-      "d": "docker-compose down",
-      "s": "rm tmp/pids/server.pid; docker-compose up"
+      "command": {
+        "rw": "docker-compose run web",
+        "ub": "docker-compose up --build",
+        "dbc": "docker-compose run web rake db:create",
+        "u": "docker-compose up",
+        "d": "docker-compose down",
+        "s": "rm tmp/pids/server.pid; docker-compose up"
+      },
+      "watch": {
+        "install": {
+          "file": "install.sh",
+          "action": "echo 'hello'"
+        }
+      }
     },
     "git": {
-      "ga": "git add -A",
-      "gc": "git commit -m"
+      "command": {
+        "ga": "git add -A",
+        "gc": "git commit -m"
+      }
     }
   }
 } 

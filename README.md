@@ -41,8 +41,10 @@ You can setup a file watcher by having
 ```json
 {
   "watch": {
-    "file": "install.sh",
-    "action": "echo 'hello'"
+    "install": {
+      "file": "install.sh",
+      "action": "echo 'hello'"
+    }
   }
 }
 ```

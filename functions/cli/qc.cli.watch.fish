@@ -6,6 +6,7 @@ function qc.cli.watch
       echo "qc error: The command `watch $argv[1]` does not exist or the quick-command.json file is improperly setup."
     else
       set -l num (echo $action | wc -w | xargs)
+      echo "Watching $file"
       eval "fswatch -o $file | xargs -n1 -I{$num} $action"
     end
   else
