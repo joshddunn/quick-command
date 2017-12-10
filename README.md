@@ -40,7 +40,7 @@ You can setup a file watcher by having
 
 ```json
 {
-  "command: {
+  "command": {
     "install": "qc cli watch install"
   },
   "watch": {
