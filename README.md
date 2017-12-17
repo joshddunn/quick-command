@@ -82,7 +82,9 @@ or you can do
 
     qc cli gif PATH_TO_MOVIE
 
-which will assume the gif path is the same as the movie.
+which will assume the gif path is the same as the movie. The defaults are 25 fps and 1080p, but you can change them by using the flags
+
+    qc cli gif -fps 25 -scale 1080 PATH_TO_MOVIE
 
 ### Presets
 

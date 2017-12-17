@@ -5,6 +5,7 @@ function qc.cli.list
     printf "\nWatchers:\n"
     printf '%s\n' (jq -Sr '.watch | keys[] as $k | "watch \($k) -> \(.[$k].file) --> \(.[$k].action)"' quick-command.json)
   else
-    echo "No qc configuration file found in this directory."
+    echo "qc error: No qc configuration file found in this directory."
+    false
   end
 end

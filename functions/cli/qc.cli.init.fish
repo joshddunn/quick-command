@@ -1,6 +1,7 @@
 function qc.cli.init
   if test -e quick-command.json
-    echo "A qc configuration file already exists in this directory. Please run 'qc cli destroy' first."
+    echo "qc error: A qc configuration file already exists in this directory. Please run 'qc cli destroy' first."
+    false
   else
     # copy the quick-command file structure
     cp $QC_PATH/templates/quick-command-init.json quick-command.json

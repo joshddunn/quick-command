@@ -3,6 +3,7 @@ function qc.cli.command
     set -l value (jq -r ".command.$argv[1]" quick-command.json)
     if [ "$value" = "null" ] 
       echo "qc error: The command `$argv[1]` does not exist."
+      false
     else
       switch (count $argv)
         case 1
@@ -12,6 +13,7 @@ function qc.cli.command
       end
     end
   else
-    echo "Invalid number of arguments."
+    echo "qc error: Invalid number of arguments."
+    false
   end
 end
