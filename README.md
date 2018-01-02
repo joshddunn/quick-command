@@ -4,7 +4,7 @@
 
 qc is a tool to define project-specific aliases of terminal commands.
 
-Currently, qc is only supported using the fish shell, but will be made more general in the future.
+Currently, qc is only supported using the fish shell on mac, but will be made more general in the future.
 
 ## Install
 
