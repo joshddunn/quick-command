@@ -9,4 +9,6 @@ switch (uname)
     apt-get install -y jq ffmpeg fswatch
 end
 
+mkdir -p $CONFIG_PATH/fish/conf.d
 cp $HOME/.local/share/qc/templates/config.fish $CONFIG_PATH/fish/conf.d/qc.fish
+source $CONFIG_PATH/fish/conf.d/qc.fish
